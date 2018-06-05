@@ -1,0 +1,15 @@
+{
+  "event":{
+    "name": "FNB"
+  },
+  "state": {
+    "timer": "reset",
+    "currentTime": 0,
+    "matchTime": 150,
+    "score":{
+      "ippon": [0,0],
+      "waza-ari": [0,0],
+      "straf": [0,0]
+    }
+  }
+}

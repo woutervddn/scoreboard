@@ -8,4 +8,4 @@ rm master.zip
 
 cd scoreboard
 
-$(which bash) ./install.sh
+$(which bash) ./scripts/install.sh

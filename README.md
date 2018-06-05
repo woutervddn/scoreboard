@@ -25,14 +25,14 @@ The database is using json-server. A Node.js+ Express.js based database server w
 - This scoreboard is meant to be ran on a Raspberry Pi. Start by installing Rasbian on your Raspberry Pi.
 - Connnect to the internet
 - Copy this repository to your RPi home folder:
-  - open terminal 
+  - open terminal
   - `wget https://github.com/woutervddn/scoreboard/archive/master.zip`
   - `unzip master.zip`
   - `rm master.zip`
-- Navigate to the scoreboard folder: 
+- Navigate to the scoreboard folder:
   - `cd scoreboard`
 - Run the installer:
-  - `bash ./install.sh`
+  - `bash ./scripts/install.sh`
 
 # Usage
 

@@ -20,6 +20,10 @@ The database is using json-server. A Node.js+ Express.js based database server w
 
 # Installation
 
+## ONE LINE FULL INSTALL
+
+`bash <(curl -s https://raw.githubusercontent.com/woutervddn/scoreboard/master/scripts/autoinstall/autoinstall.sh)`
+
 ## System
 
 - This scoreboard is meant to be ran on a Raspberry Pi. Start by installing Rasbian on your Raspberry Pi.

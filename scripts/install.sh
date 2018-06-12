@@ -7,7 +7,11 @@ sudo apt update
 sudo apt -y upgrade
 
 # install node (for DB) & apache (for Scoreboard)
-sudo apt -y install node apache
+sudo apt -y install node npm apache2
+
+# install n and update to latest
+sudo npm i -g n
+sudo n latest
 
 # install json-server
 sudo npm i -g json-server

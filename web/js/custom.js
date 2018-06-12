@@ -18,6 +18,10 @@
 
       // Get the state from the server
       function getUpdatedState(){
+        $.getJSON( "http://localhost:3000/event", function( event ) {
+          $("#event-name").not('.no-update').html( event.name ); //only update if the no-update class is not present
+        });
+
         $.getJSON( "http://localhost:3000/state", function( state ) {
 
           // Display the scores
@@ -72,6 +76,12 @@
               break;
           }
 
+        }
+
+        // Even when the state doesn't change; always update matchtime unless a game is running or paused
+        if( newTimerMatchTime != TIMER_MATCHTIME && newTimerState === 'reset'){
+          TIMER_MATCHTIME = newTimerMatchTime;
+          $("#timer").html( fmtMSS( TIMER_MATCHTIME ) );
         }
 
         if( newTimerState === 'started' ){
@@ -140,7 +150,7 @@
             // hansoku-maki
             break;
           default:
-            return "";
+            return "-";
         }
       }
 
@@ -168,4 +178,3 @@
 
       // Resize when the window is resized
       $(window).resize( autoresize );
-

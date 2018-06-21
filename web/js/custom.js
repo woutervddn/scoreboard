@@ -10,6 +10,8 @@
         // Once, get the name of the event
         $.getJSON( "http://localhost:3000/event", function( event ) {
           $("#event-name").html( event.name );
+          $("#name-yellow").html( event.nameYellow );
+          $("#name-Black").html( event.nameBlack );
         });
 
         // Every second, get the state from the server!

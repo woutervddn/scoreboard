@@ -1,6 +1,8 @@
 {
   "event":{
-    "name": "FNB"
+    "name": "FNB",
+    "nameYellow": "yellow",
+    "nameBlack": "Black"
   },
   "state": {
     "timer": "reset",
